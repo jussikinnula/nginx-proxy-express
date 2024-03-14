@@ -1,0 +1,15 @@
+{
+  "name": "nginx-proxy-express",
+  "version": "0.0.1",
+  "description": "Simple proxy setup with nginx for ExpressJS + external backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"nginx -p $PWD -e stderr -c nginx.conf\" \"node index.js\""
+  },
+  "author": "Jussi Kinnula <jussi.kinnula@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "express": "^4.18.3"
+  }
+}
